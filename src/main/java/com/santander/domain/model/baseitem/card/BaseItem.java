@@ -1,4 +1,4 @@
-package com.santander.domain.model;
+package com.santander.domain.model.baseitem.card;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;

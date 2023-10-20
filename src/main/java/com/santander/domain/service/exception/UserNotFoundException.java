@@ -1,4 +1,4 @@
-package com.santander.controller.exception.user;
+package com.santander.domain.service.exception;
 
 public class UserNotFoundException extends RuntimeException{
 
