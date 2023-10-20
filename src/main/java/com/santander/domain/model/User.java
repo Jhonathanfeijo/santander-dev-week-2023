@@ -3,6 +3,7 @@ package com.santander.domain.model;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.santander.domain.model.baseitem.feature.UserFeature;
 import com.santander.domain.model.baseitem.news.UserNews;
 
 import jakarta.persistence.CascadeType;
@@ -49,5 +50,5 @@ public class User {
 	public List<UserNews> userNews;
 	@JsonIgnore
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
-	private List<UserNews> userFeatures;
+	private List<UserFeature> userFeatures;
 }

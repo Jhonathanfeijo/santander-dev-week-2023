@@ -1,4 +1,4 @@
-package com.santander.domain.model.baseitem.card;
+package com.santander.domain.model.baseitem;
 
 import com.santander.domain.model.User;
 

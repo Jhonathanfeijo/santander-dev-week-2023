@@ -1,13 +1,12 @@
-package com.santander.domain.model;
+package com.santander.domain.model.baseitem.feature;
 
-import com.santander.domain.model.baseitem.card.UserItens;
+import com.santander.domain.model.baseitem.UserItens;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 

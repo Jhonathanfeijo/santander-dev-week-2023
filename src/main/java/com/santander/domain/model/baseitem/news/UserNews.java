@@ -1,6 +1,6 @@
 package com.santander.domain.model.baseitem.news;
 
-import com.santander.domain.model.baseitem.card.UserItens;
+import com.santander.domain.model.baseitem.UserItens;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
