@@ -22,7 +22,7 @@ public class UserService {
 	private List<UserValidation> validations;
 
 	public User create(User userRequest) {
-		valideUser(userRequest);
+		validateUser(userRequest);
 		return userRepository.save(userRequest);
 	}
 
@@ -43,12 +43,12 @@ public class UserService {
 	public User update(Long id, User user) {
 		if (!userRepository.existsById(id))
 			throw new UserNotFoundException();
-		valideUser(user);
+		validateUser(user);
 		user.setId(id);
 		return userRepository.save(user);
 	}
 	
-	private void valideUser(User user) {
+	private void validateUser(User user) {
 		validations.forEach(v -> v.validar(user));
 	}
 }
