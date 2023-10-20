@@ -1,4 +1,4 @@
-package com.santander.domain.service.validations.user;
+package com.santander.service.validations.user;
 
 import com.santander.domain.model.User;
 

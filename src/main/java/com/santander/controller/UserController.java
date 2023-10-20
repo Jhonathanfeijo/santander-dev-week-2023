@@ -18,8 +18,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import com.santander.domain.model.User;
 import com.santander.domain.repository.UserRepository;
-import com.santander.domain.service.UserService;
-import com.santander.domain.service.exception.UserNotFoundException;
+import com.santander.service.UserService;
+import com.santander.service.exception.UserNotFoundException;
 
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;

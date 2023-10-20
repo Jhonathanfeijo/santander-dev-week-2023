@@ -1,4 +1,4 @@
-package com.santander.domain.service;
+package com.santander.service;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.springframework.stereotype.Service;
 
 import com.santander.domain.model.User;
 import com.santander.domain.repository.UserRepository;
-import com.santander.domain.service.exception.UserNotFoundException;
-import com.santander.domain.service.validations.user.UserValidation;
+import com.santander.service.exception.UserNotFoundException;
+import com.santander.service.validations.user.UserValidation;
 
 @Service
 public class UserService {

@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.santander.domain.service.exception.AccountAlreadyExistsException;
+import com.santander.service.exception.AccountAlreadyExistsException;
 
 @RestControllerAdvice
 public class AccountControllerAdvice {
