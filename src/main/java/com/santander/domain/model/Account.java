@@ -7,6 +7,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
@@ -18,13 +20,16 @@ public class Account {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	@NotBlank
 	@Column(name = "number_account", unique = true)
 	private String number;
+	@NotBlank
 	@Column
 	private String agency;
+	@NotNull
 	@Column(precision = 13, scale = 2)
 	private BigDecimal balance;
-	@Column(name = "limit_acount",precision = 13, scale = 2)
+	@Column(name = "limit_account",precision = 13, scale = 2)
 	private BigDecimal limit;
 
 	public Long getId() {

@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
+import jakarta.validation.constraints.NotBlank;
 import lombok.NoArgsConstructor;
 
 @MappedSuperclass
@@ -16,6 +17,7 @@ public abstract class BaseItem {
 	private Long id;
 	@Column
 	private String icon;
+	@NotBlank
 	@Column
 	private String description;
 
