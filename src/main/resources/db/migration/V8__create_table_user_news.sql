@@ -1,5 +1,5 @@
 create table user_news(
-	id bigint not null,
+	id bigint not null auto_increment,
 	news_id bigint not null,
 	user_id bigint not null,
 	primary key(id),

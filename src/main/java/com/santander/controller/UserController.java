@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import com.santander.controller.dto.UserDto;
+import com.santander.controller.dto.UserNewsDto;
 import com.santander.domain.model.User;
 import com.santander.service.UserService;
 
@@ -40,7 +41,7 @@ public class UserController {
 	}
 
 	@GetMapping
-	public ResponseEntity<Page<UserDto>> getUsers(@PageableDefault (size = 10) Pageable pageable) {
+	public ResponseEntity<Page<UserDto>> getUsers(@PageableDefault(size = 10) Pageable pageable) {
 		Page<UserDto> users = userService.getUsers(pageable).map(user -> new UserDto(user));
 		return ResponseEntity.ok().body(users);
 	}

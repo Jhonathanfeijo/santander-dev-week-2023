@@ -1,5 +1,5 @@
 create table user_feature(
-	id bigint not null,
+	id bigint not null auto_increment,
 	feature_id bigint not null,
 	user_id bigint not null,
 	primary key(id),
