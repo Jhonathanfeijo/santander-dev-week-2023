@@ -2,6 +2,18 @@
 
 Java RESTful API criada para a Santander Dev Week
 
+## Ferramentas utilizadas
+
+JDK 17
+Lombok
+MySQL
+FlyWay
+Springboot
+
+## Railway
+
+Link de produção: https://santander-dev-week-2023-production-e189.up.railway.app/
+
 ## Diagrama de Classes
 
 ``` mermaid
