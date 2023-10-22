@@ -12,7 +12,7 @@ Springboot
 
 ## Railway
 
-Link de produção: https://santander-dev-week-2023-production-e189.up.railway.app/
+URL de produção: https://santander-dev-week-2023-production-e189.up.railway.app/
 
 ## Diagrama de Classes
 
@@ -53,4 +53,7 @@ classDiagram
     User "1" -- "n" Feature
     User "1" -- "1" Card
     User "1" -- "n" News
+```
+## Autor
 
+Jhonathan Feijó de Moraes
