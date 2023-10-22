@@ -4,11 +4,11 @@ Java RESTful API criada para a Santander Dev Week
 
 ## Ferramentas utilizadas
 
-JDK 17
-Lombok
-MySQL
-FlyWay
-Springboot
+JDK 17 <br/>
+Lombok <br/>
+MySQL <br/>
+FlyWay <br/>
+Springboot <br/>
 
 ## Railway
 
