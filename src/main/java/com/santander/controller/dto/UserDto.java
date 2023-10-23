@@ -9,7 +9,7 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 
 public record UserDto(@Valid @NotBlank String name, @Valid AccountDto accountDto, @Valid CardDto cardDto,
-		@Valid List<UserNewsDto> userNewsDtoList, @JsonIgnore @Valid List<UserFeatureDto> userFeatureDtoList) {
+	@JsonIgnore	@Valid List<UserNewsDto> userNewsDtoList, @JsonIgnore @Valid List<UserFeatureDto> userFeatureDtoList) {
 
 	public UserDto(User user) {
 		this(user.getName(), new AccountDto(user.getAccount()), new CardDto(user.getCard()),
